@@ -17,6 +17,11 @@ body {
   border: 0px;
 }
 
+.hrefMain1{
+  top: 0px;
+  position: absolute;
+}
+
 .Nav-text1 {
   display: block;
   font-family: "Gilroy-Bold", "Arial", sans-serif; /* стиль текста  */
@@ -78,6 +83,10 @@ hr {
   color: #828282; /* Цвет линии для IE6-7 */
   height: 1px; /* Толщина линии(Высота блока) */
   width: 100%; /* Длинна линии */
+  max-width: 954px;
+  position: fixed;
+  top: 80px;
+  z-index: 150;
 }
 
 a {
@@ -109,23 +118,43 @@ p:hover {
   height: auto; /* Высота блока */
   width: 100%; /* Ширина блока */
   max-width: 950px;
-  margin: 0px auto; /* Отступ */
+  margin: 80px auto 0 auto; /* Отступ */
   font-size: 12px; /* Определяет размер шрифта элемента */
   display: flex;
   flex-direction: Column; /*элементы располагаются сверху вниз. */
   justify-content: space-between; /*Элементы отображаются с одинаковыми отступами между ними. */
+  align-items: center;
 }
 
 .Header1 {
   background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  
+  height: 85px; /* Высота блока */
+  width: 100%; /* Ширина блока */
+  max-width: 100%;
+  margin: 0px auto; /* Отступ */
+  display: flex;
+  justify-content: space-around; /*Элементы отображаются с одинаковыми отступами между ними. */
+  align-items: Center; /*Элементы выравниваются вертикально по центру контейнера. */
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+}
+
+.Header1-1 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
   border: 2px solid rgb(255, 255, 255); /* Параметры границы */
   height: 85px; /* Высота блока */
   width: 100%; /* Ширина блока */
+  max-width: 954px;
   margin: 0px auto; /* Отступ */
   font-size: 12px; /* Определяет размер шрифта элемента */
   display: flex;
-  justify-content: space-between; /*Элементы отображаются с одинаковыми отступами между ними. */
+  justify-content: space-around; /*Элементы отображаются с одинаковыми отступами между ними. */
   align-items: Center; /*Элементы выравниваются вертикально по центру контейнера. */
+  position: fixed;
+  z-index: 100;
+  top: 0px;
 }
 
 .nav1,
@@ -383,11 +412,6 @@ p:hover {
 }
 
 .nav1:hover .Nav-text2 {
-  font-weight: bold;
-  color: black;
-}
-
-.main1:target .Header1 > .nav1 > .Nav-text2 {
   font-weight: bold;
   color: black;
 }
