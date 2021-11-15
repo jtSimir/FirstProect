@@ -284,6 +284,7 @@ p:hover {
     display: flex;
     justify-content: center; /*  выравнивание flex элементов по горизонтали - центр*/
     align-items: center; /*  выравнивание flex элементов по вертикали - центр*/
+  margin: 0px;
   }
   .section1 {
     background-color: rgb(255, 255, 255); /* Цвет фона блока */
